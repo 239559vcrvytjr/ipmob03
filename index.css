@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  height: 100vh;
+}
+
+#blockSource {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  padding: calc((100px - 75px) / 2);
+}
