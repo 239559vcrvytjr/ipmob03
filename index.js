@@ -1,9 +1,15 @@
 const blockButton = document.getElementById("blockButton");
 const blockSource = document.getElementById("blockSource");
 
+let block;
+
 function generateBlock() {
-  const block = document.createElement("div");
+  if (block) blockSource.removeChild(block);
+
+  block = document.createElement("div");
   block.className = "block";
+  block.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+
   blockSource.appendChild(block);
 }
 
